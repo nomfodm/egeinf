@@ -1,7 +1,7 @@
 def f(n: int, fl: bool = True):
-    if n > 21:
+    if n > 27:
         return 0
-    if n == 21 and fl:
+    if n == 27 and fl:
         return 1
     
     if n == 26:
