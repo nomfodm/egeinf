@@ -10,13 +10,18 @@ def f(n: int):
     bc = b + c
     cd = c + d
     
-    r = int(str(min(ab, bc, cd)) + str(max(ab, bc, cd)))
-    if r == 1418:
+    g = [ab, bc, cd]
+    
+    h = str(max(g))
+    g.remove(max(g))
+    j = str(max(g))
+    
+    if int(j + h) == 1418:
         print(n)
         exit(0)
 
 for n in range(1000, 10000):
     f(n)
-    
+
 # 5995
     
